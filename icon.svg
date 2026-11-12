@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Aprende para todos">
+  <rect width="512" height="512" rx="96" fill="#0B5C85"/>
+  <path d="M96 168h120a48 48 0 0 1 48 48v176a48 48 0 0 0-48-48H96z" fill="#FFFFFF"/>
+  <path d="M416 168H296a48 48 0 0 0-48 48v176a48 48 0 0 1 48-48h120z" fill="#FFD84D"/>
+  <circle cx="256" cy="120" r="28" fill="#FFD84D"/>
+</svg>
