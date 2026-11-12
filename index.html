@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Aprende para todos</title>
+    <meta name="description"
+        content="Plataforma de aprendizaje accesible: voz, alto contraste, fuente para dislexia y modo offline.">
+    <link rel="manifest" href="manifest.json">
+    <link rel="icon" href="icon.svg" type="image/svg+xml">
+    <meta name="theme-color" content="#0B5C85">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <a class="skip" href="#main">Saltar al contenido</a>
+    <header class="top">
+        <h1>Aprende para todos</h1>
+        <p class="lead">Lecciones cortas que se adaptan a ti: con voz, sin conexión y con tus ajustes de lectura.</p>
+        <button id="btnAjustes" class="btn" aria-expanded="false" aria-controls="ajustes">Ajustes de
+            accesibilidad</button>
+    </header>
+
+    <section id="ajustes" class="panel" hidden aria-label="Ajustes de accesibilidad">
+        <label>Tamaño de letra
+            <input id="size" type="range" min="100" max="200" step="10" value="100">
+        </label>
+        <label><input id="dys" type="checkbox"> Fuente para dislexia</label>
+        <label><input id="contrast" type="checkbox"> Alto contraste</label>
+        <label><input id="motion" type="checkbox"> Reducir animaciones</label>
+        <label><input id="lite" type="checkbox"> Ahorro de datos</label>
+        <button id="reset" class="btn ghost">Restablecer</button>
+    </section>
+
+    <main id="main" tabindex="-1">
+        <div id="progreso" class="progress" role="status"></div>
+        <ul id="lista" class="lessons" aria-label="Lecciones"></ul>
+        <article id="leccion" hidden></article>
+    </main>
+    <footer>Código abierto · Tus datos se guardan solo en tu dispositivo.</footer>
+    <script src="js/app.js"></script>
+</body>
+
+</html>

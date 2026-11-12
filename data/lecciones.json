@@ -1,0 +1,92 @@
+[
+    {
+        "id": "l1",
+        "titulo": "Por qué la educación abierta importa",
+        "minutos": 3,
+        "texto": [
+            "Más de 250 millones de niños y jóvenes en el mundo no van a la escuela, según la UNESCO.",
+            "Muchas personas también aprenden con barreras: conexión lenta, discapacidad visual, dislexia o falta de dispositivos modernos.",
+            "Una plataforma accesible permite que más personas aprendan en su propio ritmo y a su propia manera."
+        ],
+        "quiz": [
+            {
+                "p": "¿Qué barrera puede impedir aprender a una persona con internet lento?",
+                "o": [
+                    "La falta de datos o conexión",
+                    "El color del cielo",
+                    "El idioma de los pájaros"
+                ],
+                "c": 0
+            },
+            {
+                "p": "¿Qué logra una plataforma accesible?",
+                "o": [
+                    "Que menos gente aprenda",
+                    "Que más personas aprendan a su manera",
+                    "Que todos lean igual"
+                ],
+                "c": 1
+            }
+        ]
+    },
+    {
+        "id": "l2",
+        "titulo": "Principios de diseño accesible",
+        "minutos": 4,
+        "texto": [
+            "Un buen diseño accesible tiene cuatro ideas: se puede percibir, operar, entender y funciona con distintas tecnologías.",
+            "Por ejemplo: texto con buen contraste, botones grandes, navegación con teclado y descripciones para imágenes.",
+            "Estas ideas se llaman principios WCAG y las usan gobiernos y empresas en todo el mundo."
+        ],
+        "quiz": [
+            {
+                "p": "¿Cuál ayuda a personas con baja visión?",
+                "o": [
+                    "Texto con buen contraste",
+                    "Letra muy pequeña",
+                    "Fondos con dibujos"
+                ],
+                "c": 0
+            },
+            {
+                "p": "¿Cómo se llaman los principios internacionales de accesibilidad web?",
+                "o": [
+                    "WCAG",
+                    "USB",
+                    "HTTP"
+                ],
+                "c": 0
+            }
+        ]
+    },
+    {
+        "id": "l3",
+        "titulo": "Aprender con pocos recursos",
+        "minutos": 3,
+        "texto": [
+            "Una página liviana carga más rápido y gasta menos datos móviles.",
+            "Guardar el contenido en el dispositivo permite estudiar sin conexión, por ejemplo en el transporte o en zonas rurales.",
+            "Compartir recursos abiertos multiplica el impacto: una lección escrita una vez puede servir a miles."
+        ],
+        "quiz": [
+            {
+                "p": "¿Qué permite estudiar sin internet?",
+                "o": [
+                    "Guardar el contenido en el dispositivo",
+                    "Apagar el celular",
+                    "Usar más imágenes"
+                ],
+                "c": 0
+            },
+            {
+                "p": "¿Por qué conviene una página liviana?",
+                "o": [
+                    "Gasta menos datos",
+                    "Se ve más lenta",
+                    "Necesita más memoria"
+                ],
+                "c": 0
+            }
+        ]
+    }
+]

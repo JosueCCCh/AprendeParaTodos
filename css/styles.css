@@ -1,0 +1,220 @@
+:root {
+    --bg: #F2F7FA;
+    --ink: #0F2A3D;
+    --card: #fff;
+    --acc: #0B5C85;
+    --acc-ink: #fff;
+    --hl: #FFD84D;
+    --line: #C5D6E0;
+    --scale: 1
+}
+
+[data-contrast=on] {
+    --bg: #000;
+    --ink: #fff;
+    --card: #000;
+    --acc: #FFEB3B;
+    --acc-ink: #000;
+    --hl: #00E5FF;
+    --line: #fff
+}
+
+[data-font=dys] {
+    font-family: "Comic Sans MS", "Trebuchet MS", Verdana, sans-serif;
+    letter-spacing: .04em;
+    word-spacing: .12em
+}
+
+* {
+    box-sizing: border-box
+}
+
+html {
+    font-size: calc(100% * var(--scale))
+}
+
+body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: "Atkinson Hyperlegible", Verdana, system-ui, sans-serif;
+    line-height: 1.7;
+    max-width: 46rem;
+    margin-inline: auto;
+    padding: 1rem
+}
+
+h1 {
+    font-size: 2rem;
+    margin: .2rem 0
+}
+
+h2 {
+    font-size: 1.5rem
+}
+
+.lead {
+    max-width: 60ch
+}
+
+.skip {
+    position: absolute;
+    left: -99rem
+}
+
+.skip:focus {
+    left: 1rem;
+    top: 1rem;
+    background: var(--acc);
+    color: var(--acc-ink);
+    padding: .5rem;
+    z-index: 9
+}
+
+:focus-visible {
+    outline: 3px solid var(--hl);
+    outline-offset: 3px
+}
+
+.btn {
+    background: var(--acc);
+    color: var(--acc-ink);
+    border: 2px solid var(--acc);
+    border-radius: .5rem;
+    padding: .7rem 1.1rem;
+    font: inherit;
+    font-weight: 700;
+    cursor: pointer;
+    min-height: 44px
+}
+
+.btn.ghost {
+    background: transparent;
+    color: var(--ink);
+    border-color: var(--ink)
+}
+
+.panel {
+    display: grid;
+    gap: .8rem;
+    border: 2px solid var(--line);
+    background: var(--card);
+    padding: 1rem;
+    border-radius: .6rem;
+    margin: 1rem 0
+}
+
+.panel input[type=checkbox] {
+    width: 1.3rem;
+    height: 1.3rem;
+    margin-right: .5rem
+}
+
+.panel[hidden],
+article[hidden] {
+    display: none
+}
+
+.progress {
+    margin: 1.2rem 0;
+    font-weight: 700
+}
+
+.bar {
+    height: .9rem;
+    background: var(--line);
+    border-radius: 1rem;
+    overflow: hidden;
+    margin-top: .4rem
+}
+
+.bar i {
+    display: block;
+    height: 100%;
+    background: var(--acc);
+    transition: width .5s
+}
+
+.lessons {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    gap: .8rem
+}
+
+.lessons button {
+    width: 100%;
+    text-align: left;
+    background: var(--card);
+    color: var(--ink);
+    border: 2px solid var(--line);
+    border-radius: .6rem;
+    padding: 1rem;
+    font: inherit;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem
+}
+
+.lessons button:hover {
+    border-color: var(--acc)
+}
+
+.done {
+    font-weight: 700;
+    color: var(--acc)
+}
+
+article p {
+    max-width: 62ch;
+    padding: .2rem .4rem;
+    border-radius: .3rem
+}
+
+article p.leyendo {
+    background: var(--hl);
+    color: #000
+}
+
+fieldset {
+    border: 2px solid var(--line);
+    border-radius: .6rem;
+    margin: 1rem 0;
+    padding: 1rem
+}
+
+fieldset label {
+    display: block;
+    padding: .4rem 0;
+    cursor: pointer
+}
+
+.res {
+    font-weight: 700;
+    margin-top: .8rem
+}
+
+.row {
+    display: flex;
+    gap: .6rem;
+    flex-wrap: wrap;
+    margin: 1rem 0
+}
+
+footer {
+    margin-top: 3rem;
+    font-size: .9rem;
+    opacity: .8
+}
+
+[data-motion=off] * {
+    transition: none !important;
+    animation: none !important
+}
+
+@media (prefers-reduced-motion:reduce) {
+    * {
+        transition: none !important
+    }
+}
